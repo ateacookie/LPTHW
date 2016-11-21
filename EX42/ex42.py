@@ -30,7 +30,7 @@ class Person(object):
 class Employee(Person):
 
     def __init__(self, name, salary):
-        ## Employee has-a name, salary
+        ## it's a function! no has-a or is-a 
         super(Employee, self).__init__(name)
         ## employee has-a salary
         self.salary = salary
@@ -73,4 +73,4 @@ flipper = Fish()
 crouse = Salmon()
 
 ## harry is-a Halibut
-harry = Halibut() 
+harry = Halibut()
