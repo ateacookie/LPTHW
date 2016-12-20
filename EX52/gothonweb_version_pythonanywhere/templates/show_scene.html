@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+{% if scene %}
+  <h1 style="text-align: center;"> {{ scene.title }} </h1>
+  <pre style="text-align: center;">{{ scene.description }}</pre>
+  {% if scene.urlname == "death" %}
+    <p "text-align: center;"><a href="/">Play Again?</a></p>
+  {% else %}
+    <p style="color:red">{{ scene.event }}</p>
+
+    <p>
+      <form action="/game" method="POST" style="text-align: center;">
+        What do you do? <input type="text" name="userinput"> <input type="SUBMIT">
+      </form>
+      <button href="/help"; title="Help Button"; style="text-align: center";>Help?
+      </button>
+      <!--<a href="/help">You get help here</a> -->
+
+    </p>
+      <p1 style="color:white"; "text-align: center, bottom;"> © 2016 - Sophia Mahnke </p1>
+  {% endif %}
+{% else %}
+  <p><a href="/">Start at the Beginning</a></p>
+{% endif %}
+{% endblock %}
