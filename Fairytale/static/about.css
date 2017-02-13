@@ -1,0 +1,132 @@
+*{
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+body{
+  background-color: rgba(143, 143, 143, 0.6);
+  /*height: 800px;*/
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 1%;
+}
+#header{
+  width: 100%;
+  height: 80px;
+  background: rgba(#4d4d4d, 0.91);
+}
+#navbar{
+  width: 100%;
+  height: 80px;
+  border-bottom: 1.5px solid white;
+  border-radius: 1px;
+  float: left;
+}
+
+#navbar>li{
+  list-style: none;
+  padding-left: 5%;
+  margin-left: 15%;
+  float: left;
+}
+li>a{
+  display: block;
+  color: white;
+  line-height: 80px;
+  text-align: center;
+  text-decoration: none;
+}
+li>a:hover{
+  color: rgb(111, 112, 112);
+  text-decoration: underline;
+}
+
+#links{
+  float: left;
+}
+
+
+.button1{
+  background-image: linear-gradient(rgba(49, 224, 219, 0.66), rgb(58, 224, 160));
+  border-radius: 25px;
+  border: solid 1.5px white;
+  box-shadow: 0px 0px 5px 0px #c3c2cb;
+  cursor: pointer;
+  color: white;
+  font-family: Helvetica;
+  font-weight: 100;
+  font-size: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 45px;
+  padding-right: 45px;
+  text-decoration: none;
+  position: absolute;
+  margin-left: 20%;
+  margin-right: auto;
+}
+
+.button1:hover{
+  background-image: linear-gradient(rgba(48, 210, 211, 9), rgb(57, 233, 127));
+}
+
+.button2{
+  background-image: linear-gradient(rgba(49, 224, 219, 0.66), rgb(58, 224, 160));
+  border-radius: 25px;
+  border: solid 1.5px white;
+  box-shadow: 0px 0px 5px 0px #c3c2cb;
+  cursor: pointer;
+  color: white;
+  font-family: Helvetica;
+  font-weight: 100;
+  font-size: 20px;
+  padding: 15px;
+  text-decoration: none;
+  position: absolute;
+  margin-left: 45%;
+  margin-right: auto;
+}
+
+.button2:hover{
+  background-image: linear-gradient(rgba(48, 210, 211, 9), rgb(57, 233, 127));
+}
+
+h1{
+  font-size: 1.5em;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  color: rgb(33, 37, 36)
+}
+
+#about{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+h2{
+  text-align: justify;
+  font-family: Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: lighter;
+  color: black;
+}
+
+p{
+  font-size: 1em;
+  text-align: justify;
+}
+
+h4{
+  font-size: 1em;
+  font-family: monospace;
+  text-shadow: 2px 2px #ff0000;
+  text-align: center;
+  color: rgba(25, 237, 173, 0.74);
+  margin-top: 200px;
+}
+
+h5{
+  font-size: 0.5em;
+  font-family: Helvetica;
+  text-align: center;
+}
