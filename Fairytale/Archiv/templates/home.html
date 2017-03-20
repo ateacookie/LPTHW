@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title> Fairytale Generator </title>
+  <meta charset="utf-8">
+
+<link rel="icon" href="static/logo2.png" type="image/vnd.microsoft.icon">
+<link href="static/style.css" rel="stylesheet" type="text/css">
+
+<style>
+#bild{
+background: url(static/bg.png) no-repeat center top transparent;
+width: 900px;
+height: 563px;
+}
+
+#space{
+  padding-top: 20px;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+p{
+  text-align: justify;
+  color: black;
+  padding: 20px;
+  line-height: 120%;
+  /*margin-left: 50px;
+  margin-right: 50px;*/
+  /*margin-top: 30px;*/
+  /*background-color: rgba(0, 0, 0, 0.43);*/
+  background-color: rgba(255, 255, 255, 0.39);
+  border-radius: 10px;
+}
+
+</style>
+</head>
+
+<body>
+  <div id="header">
+    <ul id="navbar">
+      <li><a href="/home"> HOME</a></li>
+      <li><a href="/about"> ABOUT</a></li>
+      <li><a href="/contact"> CONTACT</a></li>
+    </ul>
+  </div>
+
+<h1> Fairytale Gone Bad </h1>
+
+
+
+  <div id="bild">
+    <div id="space">
+      <p> {{ text.decode('utf-8') }} </p> 
+    </div>
+    <!-- <img src="static/fairytale-003.jpg" alt="Fairytale Background" height=auto width=100% text-align=center/> -->
+  </div>
+
+
+
+<div>
+  <a href="/home" class="button">Generate New Fairytale</a>
+</div>
+
+<h3>A.R.T.</h3>
+<h4>© 2017 - Automation, Representation, Transmission</h4>
+
+</body>
+</html>

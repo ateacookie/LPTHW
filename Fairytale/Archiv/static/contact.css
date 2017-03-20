@@ -1,0 +1,76 @@
+*{
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+body{
+  background-color: rgba(143, 143, 143, 0.6);
+  /*height: 1000px;*/
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 1%;
+}
+#header{
+  width: 100%;
+  height: 80px;
+  background: rgba(#4d4d4d, 0.91);
+}
+#navbar{
+  width: 100%;
+  height: 80px;
+  border-bottom: 1.5px solid white;
+  border-radius: 1px;
+  float: left;
+}
+
+#navbar>li{
+  list-style: none;
+  padding-left: 5%;
+  margin-left: 15%;
+  float: left;
+}
+li>a{
+  display: block;
+  color: white;
+  line-height: 80px;
+  text-align: center;
+  text-decoration: none;
+}
+li>a:hover{
+  color: rgb(111, 112, 112);
+  text-decoration: underline;
+}
+
+h1{
+  font-size: 1.5em;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  color: rgb(33, 37, 36)
+}
+
+p{
+  font-size: 1em;
+  text-align: center;
+}
+
+.mail{
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  color: black;
+}
+
+
+h2{
+  font-size: 1em;
+  font-family: monospace;
+  text-shadow: 2px 2px #ff0000;
+  text-align: center;
+  color: rgba(25, 237, 173, 0.74);
+  margin-top: 470px;
+}
+
+h3{
+  font-size: 0.5em;
+  font-family: Helvetica;
+  text-align: center;
+}

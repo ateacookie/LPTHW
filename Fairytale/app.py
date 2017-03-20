@@ -2,8 +2,20 @@ from flask import Flask
 from flask import render_template
 from generator1 import Markov
 
-app = Flask(__name__)
+#Hack that only works for localhost
+# import sys
+#
+# if sys.version_info.major < 3:
+#     reload(sys)
+# sys.setdefaultencoding('utf8')
 
+#another option (doesn't work)
+# data="UTF-8 DATA"
+# udata=data.decode("utf-8")
+# asciidata=udata.encode("ascii","ignore")
+
+
+app = Flask(__name__)
 
 
 @app.route('/')
@@ -14,6 +26,7 @@ def welcome():
 def generator():
     fairytale = Markov(2)
     fairytale.train('fairytales2.txt')
+    #remove_non_ascii()
     output = fairytale.generate(137)
 
     return render_template('home.html', text=output)

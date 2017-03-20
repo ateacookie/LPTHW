@@ -38,13 +38,15 @@ class Markov(object):
             first_word = random.choice(self.graph[state])
             result.append(first_word)
 
-
+    # Function that should delete all non-ascii characters
+    # def remove_non_ascii(text):
+    #     return ''.join(i for i in text if ord(i)<128)
 
         first = random.choice(beginning)
 
         text = " ".join (result [self.order:])
         finaltext = "Once upon a time " + first + text + " and they lived happily ever after."
-        return finaltext
+        return unicode(finaltext, "utf-8")
 
 
 def fairy():
